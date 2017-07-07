@@ -1,5 +1,10 @@
 <div class="container">
-  <div class="row">
-    <preview-color></preview-color>
+  <div class="row justify-content-between">
+    <div class="col-md-2" *ngFor="let buttons of Classes">
+      <preview-color [disabled]="DisabledGlobal" [type]="buttons"></preview-color>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <input type="button" class="btn" value="{{NextState}}" (click)="ToggleState()" />
   </div>
 </div>

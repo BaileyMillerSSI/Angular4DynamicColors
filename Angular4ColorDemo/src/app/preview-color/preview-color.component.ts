@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'preview-color',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreviewColorComponent implements OnInit {
 
+  @Input() type: string;  
+  @Input() disabled: boolean;
   constructor() { }
 
   ngOnInit() {
