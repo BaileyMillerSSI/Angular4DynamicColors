@@ -4,17 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PreviewColorComponent } from './preview-color/preview-color.component';
+
+import { GlobalConfigSettingsService } from "./global-config-settings.service";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PreviewColorComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [GlobalConfigSettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
