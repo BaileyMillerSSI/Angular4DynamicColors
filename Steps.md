@@ -77,5 +77,6 @@ class ColorSettings
 ## Adding our Style to the DOM
 1. It took me awhile to decide how I wanted to do this step that is because the way I finally landed on isn't the Angular way
 2. Go into our `app.component.ts` and we are going to setup code to inject our style into the DOM
-3. This code 
-3. We need an event to listen to for changes as well as ways of changing the color(s)
+3. This code isn't complex but is really going to be the most amount of code
+4. We need an event to listen to for changes as well as ways of changing the color(s)
+5. Now that we have everything setup and ready for usage we need to add all of our defaults and all of our class properties, this takes time and lots of copy and pasting
